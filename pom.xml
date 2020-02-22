@@ -12,6 +12,16 @@
     <module>module1</module>
     <module>module2</module>
   </modules>
+  <pluginRepositories>
+    <pluginRepository>
+        <id>autoincrement-versions-maven-plugin</id>
+        <name>autoincrement-versions-maven-plugin</name>
+        <url>http://autoincrement-versions-maven-plugin.googlecode.com/svn/repo</url>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </pluginRepository>
+</pluginRepositories>
   
   <build>
     <plugins>
@@ -42,16 +52,6 @@
           </execution>
         </executions>
       </plugin>
-    <pluginRepositories>
-    <pluginRepository>
-        <id>autoincrement-versions-maven-plugin</id>
-        <name>autoincrement-versions-maven-plugin</name>
-        <url>http://autoincrement-versions-maven-plugin.googlecode.com/svn/repo</url>
-        <snapshots>
-            <enabled>true</enabled>
-        </snapshots>
-    </pluginRepository>
-</pluginRepositories>
       </plugins>
   </build>
 </project>
