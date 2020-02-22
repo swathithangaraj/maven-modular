@@ -17,8 +17,6 @@
     <pluginRepository>
         <id>autoincrement-versions-maven-plugin</id>
         <name>autoincrement-versions-maven-plugin</name>
-        <connection>scm:git:https://code.google.com/p/autoincrement/</connection>
-        <developerConnection>scm:git:https://code.google.com/p/autoincrement/</developerConnection>
         <url>http://code.google.com/p/autoincrement/source/browse/</url>
         <snapshots>
             <enabled>true</enabled>
