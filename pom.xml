@@ -42,7 +42,6 @@
           </execution>
         </executions>
       </plugin>
-    </plugins>
     <pluginRepositories>
     <pluginRepository>
         <id>autoincrement-versions-maven-plugin</id>
@@ -53,5 +52,6 @@
         </snapshots>
     </pluginRepository>
 </pluginRepositories>
+      </plugins>
   </build>
 </project>
