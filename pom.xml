@@ -11,33 +11,9 @@
   <modules>
     <module>module1</module>
     <module>module2</module>
-    <module>autoincrement-maven-plugin</module>
   </modules>
 
-  <build>
-       <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>com.googlecode.autoincrement</groupId>
-          <artifactId>autoincrement-maven-plugin</artifactId>
-          <version>0.0.2-SNAPSHOT</version>
-          <configuration>
-            <environmentVariableName>newVersion</environmentVariableName>
-            <versionNumberPrefix>1.2.</versionNumberPrefix>
-          </configuration>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>versions-maven-plugin</artifactId>
-          <version>2.1</version>
-          <configuration>
-            <newVersion>${newVersion}</newVersion>
-            <generateBackupPoms>false</generateBackupPoms>
-          </configuration>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-    
+  <build>    
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -48,30 +24,6 @@
           <target>1.7</target>
         </configuration>
       </plugin>
-      <plugin>
-            <groupId>com.googlecode.autoincrement</groupId>
-            <artifactId>autoincrement-maven-plugin</artifactId>
-            <executions>
-              <execution>
-                <goals>
-                  <goal>toRelease</goal>
-                </goals>
-                <phase>initialize</phase>
-              </execution>
-            </executions>
-          </plugin>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>versions-maven-plugin</artifactId>
-            <executions>
-              <execution>
-                <goals>
-                  <goal>set</goal>
-                </goals>
-                <phase>initialize</phase>
-              </execution>
-            </executions>
-          </plugin>
       </plugins>
   </build>
 </project>
