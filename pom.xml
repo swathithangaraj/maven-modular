@@ -24,6 +24,24 @@
           <target>1.7</target>
         </configuration>
       </plugin>
+      <plugin>
+    <groupId>com.googlecode.autoincrement</groupId>
+    <artifactId>autoincrement-plugin</artifactId>
+    <version>0.0.5-SNAPSHOT</version>
+    <executions>
+        <execution>
+            <id>update-pom-versions</id>
+            <goals>
+                <goal>increment</goal>
+                <goal>commit</goal>
+            </goals>
+            <phase>compile</phase>
+            <configuration>
+                <autoIncrementVersion>true</autoIncrementVersion>
+            </configuration>
+        </execution>
+    </executions>
+</plugin>
       </plugins>
   </build>
 </project>
