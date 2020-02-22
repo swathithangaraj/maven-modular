@@ -8,17 +8,9 @@
   <packaging>pom</packaging>
   <name>example-root</name>
   
-  <groupId>com.googlecode.autoincrement</groupId>
-  <artifactId>autoincrement-plugin</artifactId>
-  <version>0.0.5-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  <name>Autoincrement</name>
-  <description>A Maven plugin that increments the version number in the pom.xml file.</description>
-  
   <modules>
     <module>module1</module>
     <module>module2</module>
-    <module>autoincrement</module>
     <module>autoincrement-maven-plugin</module>
   </modules>
 
